@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hy的静态博客</title>
+</head>
+<body>
+    <div>
+        <h1>Hy's Blog</h1>
+        <p>本博客仅用于本人html学习</p>
+        <hr>
+        <!-- 以上为头部 -->        
+    </div>
+    <div id="footer" style="background-color: rgb(19, 231, 37);clear:both;text-align: center;">
+        <a href="http://saika.club">©2021 Saihua</a>
+        <a href="index.html" style="text-align: right;">回到首页</a>
+        <div id="time"></div>
+    </div>
+</body>
+<script>
+    (function(){
+       var time = (new Date()).toLocaleString();
+    document.getElementById("time").innerHTML = time
+     })();
+  </script>
+</html>
